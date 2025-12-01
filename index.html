@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CET - Coming Soon</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <style>
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: roboto, sans-serif;
+      }
+
+      .home {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+      }
+
+      /* Hide desktop image on mobile */
+      @media (max-width: 720px) {
+        .desk {
+          display: none;
+        }
+      }
+
+      /* Hide mobile image on desktop */
+      @media (min-width: 721px) {
+        .mobile {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <!-- Desktop Image -->
+      <img
+        src="assets/img/desk.jpg"
+        alt="Coming Soon Desktop"
+        class="bg-img desk"
+      />
+
+      <!-- Mobile Image -->
+      <img
+        src="assets/img/mobile.jpg"
+        alt="Coming Soon Mobile"
+        class="bg-img mobile"
+      />
+    </div>
+  </body>
+</html>
